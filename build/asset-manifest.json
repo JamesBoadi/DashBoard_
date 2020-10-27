@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "http://localhost:7001/my-app/static/css/main.f8b99fa3.chunk.css",
+    "main.js": "http://localhost:7001/my-app/static/js/main.4da016da.chunk.js",
+    "main.js.map": "http://localhost:7001/my-app/static/js/main.4da016da.chunk.js.map",
+    "runtime-main.js": "http://localhost:7001/my-app/static/js/runtime-main.bbb2da38.js",
+    "runtime-main.js.map": "http://localhost:7001/my-app/static/js/runtime-main.bbb2da38.js.map",
+    "static/js/2.9719d22b.chunk.js": "http://localhost:7001/my-app/static/js/2.9719d22b.chunk.js",
+    "static/js/2.9719d22b.chunk.js.map": "http://localhost:7001/my-app/static/js/2.9719d22b.chunk.js.map",
+    "index.html": "http://localhost:7001/my-app/index.html",
+    "precache-manifest.e99494ad25500645f39781ed4e685e44.js": "http://localhost:7001/my-app/precache-manifest.e99494ad25500645f39781ed4e685e44.js",
+    "service-worker.js": "http://localhost:7001/my-app/service-worker.js",
+    "static/css/main.f8b99fa3.chunk.css.map": "http://localhost:7001/my-app/static/css/main.f8b99fa3.chunk.css.map",
+    "static/js/2.9719d22b.chunk.js.LICENSE.txt": "http://localhost:7001/my-app/static/js/2.9719d22b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbb2da38.js",
+    "static/js/2.9719d22b.chunk.js",
+    "static/css/main.f8b99fa3.chunk.css",
+    "static/js/main.4da016da.chunk.js"
+  ]
+}

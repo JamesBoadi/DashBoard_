@@ -1,0 +1,88 @@
+ /*
+   render() {
+      if (this.state.homepage) {
+         return <Redirect to={"/"} />
+      }
+      return (
+         <div>
+            <div class="container" id="main-container">  { /* create two columns with one nested column 
+               <div class="row" id="bar">
+
+                  <h3 style={{ position: "fixed" }, { font: "arial" }, { transform: "translate(600px, 0px)" }}> Name:  {localStorage.getItem('name')}{/*this.name.stock*/}</h3> { /*Account information goes here */}
+
+                  <div id="equity">
+                     <h3 style={{ position: "fixed" }, { font: "arial" }, { transform: "translate(700px, 0px)" }} >Stock: SNAP {/*this.state.stock*/} </h3>
+                  </div>
+
+                  <div id="profitloss">
+                     <h3 style={{ position: "fixed" }, { font: "arial" }, { transform: "translate(750px, 0px)" }} >Price: 2.86 {/*this.state.price*/}</h3> {/* Add objects that we can update */}
+                  </div>
+
+                  <div id="register">
+                     <button style={{ position: "fixed" }, { font: "arial" }, { transform: "translate(800px, 0px)" }} onClick={this.logout} > Log Out </button> {/* Add objects that we can update */}
+                  </div>
+
+               </div>
+               <div class="row" >
+                  <div class="col-md-4" id="col-1">
+                     <div class="sidenav">
+                        <a href="#">Account</a>
+                        <a href="#">Order History</a>
+                        <a href="#">About</a>
+                     </div>
+                  </div>
+
+                  <div class="col-md-8" id="col-2">
+                     <div class="row">
+                        <div class="col-md-8" id="col-3"> {/* Where the graph is, dnable visibility upon button click */}
+                           <form class="px-4 py-3" id="border">
+                              <div class="form-group" style={{ position: "fixed" }, { textAlign: "center" }}>
+                                 <h3>Order form</h3>
+                              </div>
+
+                              <div class="form-group" style={{ position: "fixed" }, { transform: "translate(0px, 0px)" }}>
+                                 <label>Amount</label>
+                                 <input class="form-control" id="amount" aria-describedby="amountHelp" placeholder="Amount"></input>
+                                 <select class="form-control" id="option">
+                                    <option>Call</option>
+                                    <option>Put</option>
+                                 </select>
+                              </div>
+
+                              <div class="form-group" style={{ position: "fixed" }, { transform: "translate(0px, 0px)" }}>
+                                 <div class="d-inline-block">
+                                    <label>Mutiplier</label>
+                                    <div class="d-inline-block">
+                                       <input class="form-control" id="multiplier" aria-describedby="multiplier" placeholder="Multiplier"></input>
+                                    </div>
+                                 </div>
+
+                                 <div class="d-inline-block"> {/* aligns to the right, enter forms*/}
+                                    <div class="d-inline-block">
+                                       <p id="max" style={{ marginLeft: "20px" }} >Range: 20-100</p>
+                                    </div>
+                                    <div class="d-inline-block">
+                                       <button type="submit" id="decreaseMul" onClick={this.decreaseMultiplier} style={{ position: "fixed" }, { marginLeft: "110px" }}>-</button>
+                                       <button type="submit" id="increaseMul" onClick={this.increaseMultiplier} style={{ position: "fixed" }, { marginLeft: "15px" }}>+</button>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <button type="submit" style={{ position: "fixed" }, { float: "right" }} onClick={this.submitTransaction}>Place Order</button>
+                           </form>
+                        </div>
+
+                     {/*    <div class="col-md-4" id="col-4"> Where the order form goes 
+                           <div id="lineGraph">
+                              <div id="chart" >
+                                 <Chart options={this.state.options} series={this.state.series} type="line" height={350} width={800} />
+                              </div>
+                           </div>
+
+                        </div>*/}
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      );

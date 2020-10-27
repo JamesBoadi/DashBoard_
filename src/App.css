@@ -1,0 +1,298 @@
+.App {
+  text-align: center;
+  overflow-x: visible;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/**************** App ******************/
+/***************************************/
+
+@media screen and (max-width: 320px) { 
+  .App-header {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  /*  font-size: calc(10px + 2vmin);*/
+
+    overflow-y: visible;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.logo{
+  position: fixed;
+  color: white;
+  font-family: fantasy;
+  font-size: calc(10px + 2vmin);
+  font-weight: bolder;
+  font-weight: 300;
+  top: 0;
+  left: 30px;
+}
+
+
+.wrapper{
+  z-index: 9;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sidenav {
+  height: 100vh; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color:rgb(60,60,60); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 12px 14px 20px; 
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+/*************** Form ****************/
+/************************************/
+
+nav > .nav.nav-tabs{
+    border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+    margin-top: 0px;
+}
+
+.nav a{
+  color: #fff !important;
+  font-size:  calc(8pt + 1vmin) !important;
+  margin-top: 0px;
+}
+
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+    border: none;
+    color:#fff;
+    background: grey;
+    min-height: 20pt;
+    min-width: 100pt;
+    border-radius:0;
+}
+
+.tab{
+  border: none;
+  color:#fff;
+  background: grey;
+  min-height: 20pt;
+  min-width: 100pt;
+  border-radius:0;
+}
+
+.mainForm{
+  position: -webkit-sticky;
+  position: sticky;
+  height: 28rem;
+  width: 18rem;
+  background: 	#F8F8F8;
+  border-radius: .7em;
+  min-width: 18rem;
+  box-shadow: 0.5px 0.5px 0.5px black;
+  transform: translate(0px, 150px);
+  margin: auto;
+  overflow: visible;
+  left: 40%;
+ /* box-shadow: 0 0 0 .1em grey;
+  outline: .1em solid grey;*/
+}
+
+.loginButton
+{
+  position: absolute;
+  width: 78%;
+  right: 35px;
+}
+
+.text-email{
+  position: relative;
+  color:black;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 20px;
+  padding: 0px;
+  top: 10px;
+  left: -93px;
+}
+
+.text-password{
+  position: relative;
+  color:black;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 10px;
+  padding: 0px;
+  top: -20px;
+  left: -80px;
+}
+
+#emailBox
+{
+  position: relative;
+  width: 220px;
+  margin: 5px; 
+  top: -10px;
+  left: 25px;
+}
+
+#passwordBox
+{
+  position: relative;
+  width: 220px;
+  margin: 0px; 
+  padding: -10px;
+  top: -20px;
+  left: 30px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/************** Trade ****************/
+/*************************************/
+
+.trade  .mainForm{
+  position: -webkit-sticky;
+  position: sticky;
+  height: 28rem;
+  width: 23rem;
+  background:	#F8F8F8;
+  border-radius: .7em;
+  min-width: 18rem;
+  box-shadow: 0.5px 0.5px 0.5px black;
+  overflow: visible;
+  cursor: pointer;
+  transform: translate(0px, 0px);
+}
+
+.trade .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.trade .mainForm .decreaseMul{
+  position: "fixed";
+  margin-Left: "110px";
+}
+
+.trade .mainForm .multiplier
+{
+  border-style: "ridge";
+  border-width: 1px;
+  transform: translate(30px, 10px);
+}
+
+
+.trade .mainForm .buyButton{
+  text-decoration: solid;
+  display: inline-block;
+  transition-duration: 0.7s;
+  border: 0.5px groove rgba(128, 128, 128, 0.356);
+  border-radius: 3px;
+}
+
+.trade .mainForm .sellButton{
+  text-decoration: solid;
+  display: inline-block;
+  transition-duration: 0.8s;
+  border: 0.5px groove rgba(128, 128, 128, 0.356);
+  border-radius: 3px;
+}
+
+.trade .mainForm .buyButton:hover{
+  background-color: rgb(76, 76, 238);
+}
+
+.trade .mainForm .sellButton:hover{
+  background-color: rgb(76, 76, 238);
+}
+/************** DropZone ***************/
+/***************************************/
+
+.dropzoneOne{ 
+  width: 19rem;
+  height: 28rem; 
+}
+
+.dropzoneTwo{
+  display: absolute;
+  background-color: rgb(160, 19, 19);
+  width: 50%;
+  height: 28rem;
+  transform: translate(350px, -448px);
+}
+
+/************** Stock ******************/
+/***************************************/
+
+.stock table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.stock table, th, td{
+  padding: 2.5px;
+}
+
+.stock tr:hover { background-color: rgb(50,50,50) }
+
+/************** History Table ******************/
+/***********************************************/
+
+.history table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.history table, th, td{
+  padding: 2.5px;
+}
+
+.history tr:hover { background-color: rgb(50,50,50) }
+
+
+@media screen and (max-width: 800px) { 
+  
+}
